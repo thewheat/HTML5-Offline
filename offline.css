@@ -1,0 +1,22 @@
+body {
+	padding: 10px;
+}
+h3 {
+	border-bottom: 1px solid blue;
+}
+li {
+	margin-bottom: 15px;
+}
+	li a, li a:visited {
+		text-decoration: none;
+	}
+	li a:active {
+		background-color: #444;
+	}
+	li a:hover {
+		background-color: #ddd;
+	}
+	li a {
+		padding: 5px;
+		border: 1px solid black;
+	}

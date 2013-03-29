@@ -1,0 +1,30 @@
+<html manifest="offline-manifest.php">
+<head>
+	<title>Offline</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" media="all" href="offline.css" />
+
+</head>
+<body>
+	<h3>Offline</h3>
+	<p>This page is available when i am offline</p>
+	<p>Current status <h2 id='status'></h2></p>
+	Onsite Image in Cache<br />
+	<img src="img/offline-image-online.png" /><br />
+	Onsite Image not Cache<br />
+	<img src="img/offline-image-not-in-cache.png" /> <br />
+	Offsite Image not Cache<br />
+	<img src="http://cornergeeks.com/logos/cornergeeks.jpg" /><br />
+	<br />
+	<input type="button" onclick="window.applicationCache.update()" value="check for new manifest!">
+	<textarea id="log" style="width: 100%; height: 300px"></textarea>
+	<ul>
+		<li><a href="offline.htm">Offline page</a></li>
+		<li><a href="offline-not-in-cache.htm">Page - not in cache</a></li>
+		<li><a href="offline-fallback.htm">Fall back page</a></li>
+		<li><a href="offline-this-page-doesnt-exist.htm">404</a></li>
+		<li><a href="http://google.com">Google</a>
+	</ul>
+	<script src="offline.js"></script>
+</body>
+</html>
